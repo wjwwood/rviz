@@ -39,7 +39,7 @@
 
 #ifdef Q_OS_MAC
 #include <ApplicationServices/ApplicationServices.h>
-// Apparently OSX #defines 'check' to be an empty string somewhere.  
+// Apparently OSX #defines 'check' to be an empty string somewhere.
 // That was fun to figure out.
 #undef check
 #endif
@@ -105,6 +105,7 @@ VisualizerApp::VisualizerApp()
 bool VisualizerApp::init( int argc, char** argv )
 {
   ROS_INFO( "rviz version %s", get_version().c_str() );
+  ROS_INFO( "compiled against Qt version " QT_VERSION_STR );
   ROS_INFO( "compiled against OGRE version %d.%d.%d%s (%s)",
             OGRE_VERSION_MAJOR, OGRE_VERSION_MINOR, OGRE_VERSION_PATCH,
             OGRE_VERSION_SUFFIX, OGRE_VERSION_NAME );
