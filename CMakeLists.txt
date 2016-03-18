@@ -116,7 +116,7 @@ find_package(catkin REQUIRED
   message_filters
   nav_msgs
   pluginlib
-  python_qt_binding
+  # python_qt_binding
   resource_retriever
   rosbag
   rosconsole

@@ -99,7 +99,13 @@ bool reloadShaders(std_srvs::Empty::Request&, std_srvs::Empty::Response&)
 VisualizerApp::VisualizerApp()
   : continue_timer_( 0 )
   , frame_( 0 )
+  , app_( 0 )
 {
+}
+
+void VisualizerApp::setApp( QApplication * app )
+{
+  app_ = app;
 }
 
 bool VisualizerApp::init( int argc, char** argv )
@@ -261,7 +267,8 @@ bool VisualizerApp::init( int argc, char** argv )
       RenderSystem::forceNoStereo();
     }
 
-    frame_ = new VisualizationFrame;
+    frame_ = new VisualizationFrame();
+    frame_->setApp( this->app_ );
     if( help_path != "" )
     {
       frame_->setHelpPath( QString::fromStdString( help_path ));

@@ -18,6 +18,7 @@
 			// "-framework QtGui",
 			// "-I/usr/local/Cellar/qt/4.8.6/lib/QtCore.framework/Versions/4/Headers",
 			// "-I/usr/local/Cellar/qt/4.8.6/lib/QtGui.framework/Versions/4/Headers",
+			"-I/usr/local/Cellar/qt5/5.5.1_2/include",
 			"-I/usr/local/Cellar/qt5/5.5.1_2/Frameworks/QtCore.framework/Versions/Current/Headers",
 			"-I/usr/local/Cellar/qt5/5.5.1_2/Frameworks/QtGui.framework/Versions/Current/Headers",
 			"-I/usr/local/Cellar/qt5/5.5.1_2/Frameworks/QtWidgets.framework/Versions/Current/Headers",
